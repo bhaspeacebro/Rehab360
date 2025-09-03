@@ -1,0 +1,22 @@
+Timestamp,User,Exercise,Reps,Sets,Angle,Form_Correct
+2025-08-26 19:03:37,Demo,Shoulder Press,0,0,{},True
+2025-08-26 19:03:38,Demo,Shoulder Press,0,0,{},True
+2025-08-26 19:03:38,Demo,Shoulder Press,0,0,{},True
+2025-08-26 19:03:38,Demo,Shoulder Press,0,0,{},True
+2025-08-26 19:19:59,Demo,Shoulder Press,0,0,{'left_elbow': 121.68589047749433},True
+2025-08-26 19:20:19,Demo,Side Leg Raise,0,0,"{'left_elbow': 121.68589047749433, 'right_elbow': 31.151246974905533}",True
+2025-08-26 19:20:22,Demo,Side Leg Raise,0,0,"{'left_elbow': 121.68589047749433, 'right_elbow': 31.151246974905533}",True
+2025-08-26 19:20:35,Demo,Side Leg Raise,0,0,"{'left_elbow': 121.68589047749433, 'right_elbow': 31.151246974905533}",True
+2025-08-26 19:21:20,Demo,Side Leg Raise,0,0,"{'left_elbow': 41.658064193814766, 'right_elbow': 31.151246974905533}",True
+2025-08-26 19:21:23,Demo,Side Leg Raise,0,0,"{'left_elbow': 41.658064193814766, 'right_elbow': 31.151246974905533}",True
+2025-08-26 19:31:06,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:31:07,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:31:07,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:31:07,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:31:08,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:45:09,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:45:09,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:45:10,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:45:10,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:45:10,Demo,Side Leg Raise,0,0,{},True
+2025-08-26 19:45:11,Demo,Side Leg Raise,0,0,{},True
