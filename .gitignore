@@ -1,10 +1,43 @@
-.traerc.json
-.vscode/
-.coderabbit.yaml
-.venv311/
-.venv311/
-.venv311/
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# AI tool temp folders
+.ai-temp/
+.trae-temp/
+.windsurf-temp/
+.lovable-temp/
+
+# Archives and large binaries
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.bin
+*.exe
+*.dll
+
+# Existing ignored files from old .gitignore
+streamer/*.pdf
+streamer/*.ppt
+streamer/*.txt
 trace_log.txt
-trace_log.txt
-src/trace_log.txt
-trace_log.txt
+trace_log.txt.old
+trace_log.txt.new
+trace_log.txt.test
+trace_log.txt.test.old
+trace_log.txt.test.new
