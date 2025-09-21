@@ -5,3 +5,5 @@
 .venv311/
 .venv311/
 trace_log.txt
+trace_log.txt
+src/trace_log.txt
