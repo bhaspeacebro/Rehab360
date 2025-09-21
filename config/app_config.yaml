@@ -1,0 +1,168 @@
+# Rehab360 Pro Configuration File
+# Real-time Motion Analysis System with AI Physiotherapist
+
+# Camera Settings
+camera:
+  device_id: 0
+  width: 1280
+  height: 720
+  fps: 30
+  buffer_size: 1
+  flip_horizontal: true  # Mirror effect for user
+
+# Pose Detection Settings
+pose_detection:
+  model_complexity: 1  # 0=lite, 1=full, 2=heavy
+  min_detection_confidence: 0.7
+  min_tracking_confidence: 0.7
+  smooth_landmarks: true
+  smoothing_window: 5  # Number of frames for smoothing
+
+# Skeleton Visualization
+skeleton:
+  bone_thickness: 3
+  joint_radius: 8
+  glow_intensity: 0.7
+  skeleton_opacity: 0.9
+  show_connections: true
+  colors:
+    bones: [255, 255, 255]  # White
+    joints: [255, 100, 100]  # Light red
+    glow: [100, 200, 255]    # Soft blue
+
+# AI Physiotherapist Settings
+physiotherapist:
+  enabled: true
+  personality: "encouraging"  # Options: encouraging, strict, technical, friendly
+  voice_engine: "gtts"  # Options: gtts, pyttsx3
+  speech_rate: 170  # Words per minute
+  volume: 0.9
+  language: "en"
+  
+  # Feedback timing
+  feedback_cooldowns:
+    form: 2.0
+    motivation: 5.0
+    instruction: 3.0
+    warning: 1.5
+    praise: 4.0
+  
+  # AI Models (optional, for advanced features)
+  use_ai_models: false  # Set to true if you have GPU and want advanced AI
+  sentiment_analysis: true
+  context_awareness: true
+
+# Exercise Settings
+exercises:
+  squat:
+    enabled: true
+    target_angles:
+      knee: [80, 110]
+      hip: [140, 190]
+    rep_tempo: 3.0  # Seconds per rep
+    rest_between_sets: 30
+    
+  bicep_curl:
+    enabled: true
+    target_angles:
+      elbow: [40, 160]
+      shoulder: [0, 30]
+    rep_tempo: 2.5
+    rest_between_sets: 20
+    
+  shoulder_press:
+    enabled: true
+    target_angles:
+      elbow: [80, 170]
+      shoulder: [10, 40]
+    rep_tempo: 2.5
+    rest_between_sets: 25
+
+# Performance Optimization
+performance:
+  use_gpu: true  # Use GPU if available
+  max_fps: 30
+  frame_skip: 0  # Skip frames if needed (0 = no skip)
+  async_processing: true
+  thread_pool_size: 4
+  
+  # Caching
+  cache_pose_results: true
+  cache_size_mb: 100
+  
+  # Memory management
+  max_history_size: 100
+  cleanup_interval: 60  # Seconds
+
+# UI Settings
+ui:
+  show_fps: true
+  show_angles: true
+  show_rep_count: true
+  show_form_score: true
+  show_instructions: true
+  
+  # Colors (BGR format)
+  text_color: [255, 255, 255]
+  success_color: [0, 255, 0]
+  warning_color: [0, 255, 255]
+  error_color: [0, 0, 255]
+  
+  # Fonts
+  font_scale: 0.7
+  font_thickness: 2
+
+# Data Recording
+recording:
+  enabled: false
+  output_directory: "./recordings"
+  save_video: false
+  save_landmarks: true
+  save_analytics: true
+  
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "./logs/rehab360.log"
+  console_output: true
+  max_file_size_mb: 10
+  backup_count: 5
+
+# Network Settings (for future remote physiotherapist feature)
+network:
+  enable_remote: false
+  server_url: "http://localhost:5000"
+  api_key: ""
+  timeout: 10
+
+# Advanced Features
+advanced:
+  # Multi-person tracking
+  multi_person: false
+  max_persons: 1
+  
+  # Exercise auto-detection
+  auto_detect_exercise: false
+  
+  # Progress tracking
+  track_progress: true
+  save_session_stats: true
+  
+  # Injury prevention
+  injury_prevention_mode: true
+  fatigue_detection: true
+  
+  # Custom exercises
+  allow_custom_exercises: false
+  
+# Shortcuts
+keyboard_shortcuts:
+  quit: "q"
+  reset_counter: "r"
+  switch_to_squat: "s"
+  switch_to_bicep: "b"
+  switch_to_press: "p"
+  show_stats: "space"
+  toggle_voice: "v"
+  toggle_skeleton: "k"
+  pause: "esc"

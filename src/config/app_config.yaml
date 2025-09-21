@@ -1,0 +1,7 @@
+pose_detection:
+  model_complexity: 1
+  enable_segmentation: false
+  smooth_landmarks: true
+  min_detection_confidence: 0.6
+  min_tracking_confidence: 0.5
+  frame_skip: 2
