@@ -1,10 +1,32 @@
-.traerc.json
-.vscode/
-.coderabbit.yaml
-.venv311/
-.venv311/
-.venv311/
-trace_log.txt
-trace_log.txt
-src/trace_log.txt
-trace_log.txt
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+ECHO is on.
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+ECHO is on.
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+ECHO is on.
+# AI tool temp folders
+.ai-temp/
+.trae-temp/
+.windsurf-temp/
+.lovable-temp/
+ECHO is on.
+# Archives and large binaries
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.bin
+*.exe
+*.dll
