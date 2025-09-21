@@ -2,25 +2,25 @@
 *.log
 *.tmp
 *.bak
-ECHO is on.
+
 # OS files
 .DS_Store
 Thumbs.db
 ehthumbs.db
 Desktop.ini
-ECHO is on.
+
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-ECHO is on.
+
 # AI tool temp folders
 .ai-temp/
 .trae-temp/
 .windsurf-temp/
 .lovable-temp/
-ECHO is on.
+
 # Archives and large binaries
 *.zip
 *.tar
@@ -30,3 +30,14 @@ ECHO is on.
 *.bin
 *.exe
 *.dll
+
+# Existing ignored files from old .gitignore
+streamer/*.pdf
+streamer/*.ppt
+streamer/*.txt
+trace_log.txt
+trace_log.txt.old
+trace_log.txt.new
+trace_log.txt.test
+trace_log.txt.test.old
+trace_log.txt.test.new
